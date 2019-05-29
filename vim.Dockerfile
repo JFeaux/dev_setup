@@ -20,4 +20,7 @@ RUN python /root/.vim/bundle/YouCompleteMe/install.py --clang-completer
 # Use my bashrc
 COPY my_env/.bashrc /root/.bashrc
 
+# Use my tmux.conf
+COPY my_env/.tmux.conf /root/.tmux.conf
+
 WORKDIR /app

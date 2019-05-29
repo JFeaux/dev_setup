@@ -22,19 +22,9 @@ Bundle 'Valloric/YouCompleteMe'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-
-highlight Comment ctermfg=DarkRed cterm=bold
-highlight Type ctermfg=DarkBlue cterm=bold 
-highlight Conditional ctermfg=DarkMagenta cterm=bold
-highlight Include ctermfg=DarkBlue cterm=bold
-highlight Statement ctermfg=DarkBlue cterm=bold
-highlight Identifier ctermfg=Magenta cterm=bold
-highlight Repeat ctermfg=DarkMagenta cterm=bold
-"highlight String  cterm=italic
-"highlight String ctermfg=White ctermbg=Green cterm=italic
-highlight Boolean ctermfg=DarkMagenta cterm=bold
-highlight LineNr ctermfg=DarkBlue
-highlight Normal ctermfg=Black cterm=bold
+if has('persistent_undo')      "check if your vim version supports it
+  set undofile                 "turn on the feature  
+endif     
 
 syntax enable
 
